@@ -1,7 +1,2 @@
-cmake_minimum_required(VERSION 3.10)
-project(S01 C)
-
-set(CMAKE_C_STANDARD 99)
-
-add_executable(pr1 pr1.c)
-add_executable(pr2 pr2.c)
+add_executable(s01pr01 s01pr01.c)
+add_executable(s01pr02 s01pr02.c)
