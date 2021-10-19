@@ -5,4 +5,4 @@ set(CMAKE_C_STANDARD 99)
 
 add_subdirectory(S01)
 add_subdirectory(S02)
-
+add_subdirectory(S03)

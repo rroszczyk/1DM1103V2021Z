@@ -1,0 +1,7 @@
+add_executable(s03pr01 s03pr01.c)
+add_executable(s03pr02 s03pr02.c)
+add_executable(s03pr03 s03pr03.c)
+add_executable(s03pr04 s03pr04.c)
+add_executable(s03pr05 s03pr05.c)
+add_executable(s03pr06 s03pr06.c)
+add_executable(s03pr07 s03pr07.c)

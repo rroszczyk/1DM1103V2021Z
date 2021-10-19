@@ -1,0 +1,8 @@
+Napisać program który wyczytuje plik o nawie pdanej w linii komend, zakłada, że w pliku są tylko liczby rzeczywiste i wypisuje podsumowanie w postaci:
+- wartość najmniejszą
+- wartość największą
+- liczbę liczb
+- podaje wartość średnią: suma/ilość.
+
+Jeśli nie zostanie podana nazwa pliku wejściowego czyta z linii poleceń
+
