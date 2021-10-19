@@ -5,7 +5,7 @@ Podstawy programowania
 
 Pobranie repozytorium:
 
-`git clone git@github.com:rroszczyk/1DM1103V2021Z.git`
+`git clone https://github.com/rroszczyk/1DM1103V2021Z.git`
 
 Aktualizacja lokalnego repozytorium w oparciu o zdalne:
 
