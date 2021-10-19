@@ -10,3 +10,6 @@ Pobranie repozytorium:
 Aktualizacja lokalnego repozytorium w oparciu o zdalne:
 
 `git pull`
+
+Podręcznik git https://git-scm.com/book/pl/v2
+Podręcznik make http://www.gnu.org/software/make/manual/make.html
