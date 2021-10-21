@@ -3,11 +3,7 @@
 //
 #include <stdio.h>
 #include <stdlib.h>
-
-float przelicz (float celc)
-{
-    return (5.0 / 9.0) * (celc - 32);
-}
+#include "funkcja_przelicz.h"
 
 int main (int argc, char* argv[])
 {
@@ -25,7 +21,7 @@ int main (int argc, char* argv[])
     }
     else if (argc > 1 && argc < 3)
     {
-        printf( "Proszę podać co najmniej dwa argumenty wywoałania programu \n");
+        printf( "Proszę podać co najmniej dwa argumenty wywołania programu \n");
         return 1;
     }
     else
@@ -43,6 +39,6 @@ int main (int argc, char* argv[])
 
     for (int fahr = lower; fahr <= upper; fahr += step)
     {
-        printf("%3.0f %6.2f\n", fahr, przelicz(fahr));
+        printf("%d %6.2f\n", fahr, przelicz(fahr));
     }
 }

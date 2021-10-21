@@ -5,7 +5,7 @@
 
 int main()
 {
-    char name[20];
+    char name[3];
     printf("Jak masz na imię: ");
     scanf("%s", name);
     printf("Twoje imię to %s.", name);

@@ -8,7 +8,8 @@ int main(int argc, char* argv[])
     int i;
 
     printf("Kody dziesiętne wielkich liter ASCII:\n");
-    for (i = 'A'; i <= 'Z'; i++)
+    for (int i = 'A'; i <= 'Z'; i++)
         printf("%c - %d\n", i, i);
+    printf("licznik: %d\n", i);
     return 0;
 }

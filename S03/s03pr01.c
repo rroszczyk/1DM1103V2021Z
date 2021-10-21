@@ -3,15 +3,13 @@
 //
 #include <stdio.h>
 #include <stdlib.h>
+#include "funkcja_przelicz.h"
 
-float przelicz (float celc)
-{
-    return (5.0 / 9.0) * (celc - 32);
-}
+#define DEFAULT_STEP 20
 
 int main (int argc, char* argv[])
 {
-    int step = 20;
+    int step = DEFAULT_STEP;
 
     if (argc >= 3)
     {
@@ -20,6 +18,11 @@ int main (int argc, char* argv[])
 
         if (argc == 4) {
             step = atoi(argv[3]);
+        }
+        
+        if (step <= 0) {
+            step = DEFAULT_STEP;
+            printf("Wartość kroku powinna być większa od 0\n");
         }
 
         if (upper <= lower)
@@ -30,7 +33,7 @@ int main (int argc, char* argv[])
 
         for (int fahr = lower; fahr <= upper; fahr += step)
         {
-            printf("%3.0f %6.2f\n", fahr, przelicz(fahr));
+            printf("%d %6.2f\n", fahr, przelicz(fahr));
         }
         return 0;
     } else {

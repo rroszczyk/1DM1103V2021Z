@@ -13,5 +13,5 @@ int main(int argc, char* argv[])
       printf("%i: %s \n", i, argv[i]);
    }
    
-   return 0;
+   return 100;
 }

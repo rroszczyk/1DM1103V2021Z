@@ -1,5 +1,5 @@
-add_executable(s03pr01 s03pr01.c)
-add_executable(s03pr02 s03pr02.c)
+add_executable(s03pr01 s03pr01.c funkcja_przelicz.c)
+add_executable(s03pr02 s03pr02.c funkcja_przelicz.c)
 add_executable(s03pr03 s03pr03.c)
 add_executable(s03pr04 s03pr04.c)
 add_executable(s03pr05 s03pr05.c)
