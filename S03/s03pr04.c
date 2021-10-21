@@ -22,6 +22,7 @@ int main (int argc, char *argv[])
     double d;
 
     srand(time(NULL));
+    //srand(100);
 
     d = a + (b - a) * (double)rand() / RAND_MAX;
 

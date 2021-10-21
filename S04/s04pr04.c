@@ -7,7 +7,7 @@ int main()
 {
     int dd[][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}};
 
-    int *ptr = &dd;
+    int *ptr = (int*)&dd;
 
     printf("Rozmiar tablicy %d\n", sizeof(dd));
     printf("Rozmiar elementu tablicy %d\n", sizeof(dd[0]));

@@ -7,7 +7,7 @@
 int czyJestNaStosie(void* ptr)
 {
     int dummy; // zawsze umieszczone jest na stosie
-    return ptr > &dummy;
+    return ptr > (void*)&dummy;
 }
 
 int a = 100;
