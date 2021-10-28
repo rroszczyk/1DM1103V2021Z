@@ -1,5 +1,5 @@
 //
-// Created by roszczyr on 28.10.2021.
+// Created by Radosław Roszczyk on 28.10.2021.
 //
 #include <stdio.h>
 #include <math.h> // -lm
