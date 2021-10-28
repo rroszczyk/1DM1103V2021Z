@@ -1,0 +1,6 @@
+add_executable(s05pr01 s05pr01.c)
+add_executable(s05pr02 s05pr02.c)
+add_executable(s05pr03 s05pr03.c)
+target_link_libraries(s05pr03 m)
+add_executable(s05pr04 s05pr04.c)
+add_executable(s05pr05 s05pr05.c)
