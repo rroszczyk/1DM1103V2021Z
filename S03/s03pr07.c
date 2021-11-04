@@ -8,6 +8,11 @@ int main (int argc, char *argv[])
 {
     FILE *we = argc > 1 ? fopen(argv[1],"r") : stdin;
 
+    if (we != stdin) 
+    {
+        printf("Czytam dane z pliku\n");
+    }
+
     if( we != NULL )
     {
         int n = 0;          // licznik liczb

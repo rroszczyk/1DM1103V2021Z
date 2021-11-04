@@ -15,7 +15,7 @@ double sred (double v[], int n)
     return s/n;
 }
 
-int main( int argc, char *argv[] )
+int main(int argc, char *argv[])
 {
     FILE *we = argc > 1 ? fopen( argv[1], "r" ) : stdin;
     int n = 0;
