@@ -65,6 +65,21 @@ void append(struct Node** ptrHead, void *newData, size_t dataSize)
     last->Next = newNode;
 }
 
+void deleteList(struct Node** ptrHead)
+{
+    struct Node* current = *ptrHead;
+    struct Node* next;
+
+    while (current != NULL)
+    {
+        next = current->Next;
+        free(current);
+        current = next;
+    }
+
+    *ptrHead = NULL;
+}
+
 void printList(struct Node *node, void (*handle)(void *))
 {
     while (node != NULL)
