@@ -1,0 +1,5 @@
+add_executable(s09pr01 s09pr01.c)
+add_executable(s09pr02 s09pr02.c)
+add_executable(s09pr03 s09pr03.c)
+add_executable(s09pr04 s09pr04.c)
+add_executable(s09pr05 s09pr05.c)
