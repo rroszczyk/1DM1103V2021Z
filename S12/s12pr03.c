@@ -11,6 +11,7 @@ typedef struct Node {
 
 ptrTrie insert(ptrTrie t, char* napis)
 {
+    int idx = napis[0] - 'A';
 }
 
 // 0 - brak
@@ -21,5 +22,10 @@ int find(ptrTrie t, char* napis)
 
 int main(int argc, char **argv)
 {
+    char* napis = "Basia Ma Kota";
+
+    int idx = napis[0] - 'A';
+
+    printf("%d", idx);
     return 0;
 }
