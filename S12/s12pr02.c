@@ -9,6 +9,7 @@ typedef struct Node {
     struct Node *left, *right;
 } *ptrTree, tNode;
 
+//ptrTree insert(struct Node* t, int x)
 ptrTree insert(ptrTree t, int x)
 {
     if (t == NULL)

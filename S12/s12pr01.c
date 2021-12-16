@@ -56,6 +56,7 @@ int main()
 
     for (int i = 0; i <= 15; i += 3)
     {
+        print(l);
         l = add(l, i);
     }
     while (l != NULL)
@@ -63,5 +64,6 @@ int main()
         print(l);
         l = delLast(l);
     }
+    print(l);
     return 0;
 }
