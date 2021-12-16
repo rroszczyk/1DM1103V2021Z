@@ -7,7 +7,7 @@
 typedef struct Node {
     int value;
     struct Node *last;
-} *ptrNode;
+} *ptrNode, *ptrStos;
 
 ptrNode delLast(ptrNode node)
 {
@@ -52,7 +52,7 @@ void print(ptrNode l)
 
 int main()
 {
-    ptrNode l = NULL;
+    ptrStos l = NULL;
 
     for (int i = 0; i <= 15; i += 3)
     {

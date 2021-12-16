@@ -7,14 +7,15 @@
 typedef struct Node {
     int d;
     struct Node *left, *right;
-} *ptrTree, tNode;
+} *ptrTree, tNode, *ptrNode;
 
 //ptrTree insert(struct Node* t, int x)
 ptrTree insert(ptrTree t, int x)
 {
     if (t == NULL)
     {
-        tNode *n = malloc(sizeof *n);
+        ptrNode n = malloc(sizeof *n);
+        //tNode *n = malloc(sizeof *n);
         n->d = x;
         n->left = n-> right = NULL;
         return n;
@@ -51,7 +52,7 @@ int main(int argc, char **argv)
     ptrTree t = NULL;
     int num;
 
-    for (int i = 1; i < 20; i++)
+    for (int i = 0; i < 20; i++)
     {
         num = rand() % 100;
         t = insert(t, num);
