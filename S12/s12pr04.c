@@ -49,6 +49,7 @@ int main(int argc, char **argv)
     Trie = insert(Trie, "ABACKI");
     printf("%d", find(Trie, "ABAKUS"));
     printf("%d", find(Trie, "ABACKI"));
+    printf("%d", find(Trie, "ABACKII"));
     printf("%d", find(Trie, "ALA"));
     return 0;
 }
