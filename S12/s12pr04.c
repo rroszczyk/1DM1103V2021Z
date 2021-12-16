@@ -33,7 +33,7 @@ int find(ptrTrie t, char* napis)
     if (t == NULL) {
         return 0;
     }
-    if (t->Znak == '$') {
+    if (t->Znak == '$' && napis[0] == '\0') {
         return 1;
     }
     int idx = napis[0] - 'A';
@@ -45,6 +45,10 @@ int main(int argc, char **argv)
     ptrTrie Trie = NULL;
 
     Trie = insert(Trie, "ABAKUS");
+    Trie = insert(Trie, "ABAZUR");
+    Trie = insert(Trie, "ABACKI");
     printf("%d", find(Trie, "ABAKUS"));
+    printf("%d", find(Trie, "ABACKI"));
+    printf("%d", find(Trie, "ALA"));
     return 0;
 }
