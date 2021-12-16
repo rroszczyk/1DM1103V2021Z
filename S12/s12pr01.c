@@ -40,7 +40,7 @@ ptrNode add(ptrNode node, int x)
     }
 }
 
-void print (ptrNode l)
+void print(ptrNode l)
 {
     while (l != NULL)
     {
