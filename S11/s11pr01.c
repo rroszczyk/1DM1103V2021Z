@@ -28,8 +28,8 @@ void push(struct Node** head_ref, int new_data)
 }
 
 // dodaje element za wskazanym
-void insertAfter(struct Node* prev_node, int new_data)
-{
+    void insertAfter(struct Node* prev_node, int new_data)
+    {
     if (prev_node == NULL) {
         printf("element poprzedzający musi istnieć");
         return;
@@ -112,7 +112,7 @@ void deleteNode(struct Node** head_ref, struct Node* del)
 }
 
 
-// usuwa element o wskazanym indeksie
+// usuwa element o wskazanym indeksie n
 void deleteNodeAtGivenPos(struct Node** head_ref, int n)
 {
     if (*head_ref == NULL || n <= 0) {
