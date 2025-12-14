@@ -92,9 +92,9 @@ coverage:
 	@$(MAKE) CFLAGS="$(CFLAGS) $(COV_CFLAGS)" LDFLAGS="$(LDFLAGS) $(COV_LDFLAGS)" test
 	@mkdir -p $(COV_DIR)
 	@echo "== Capturing coverage =="
-	@lcov --capture --directory . --output-file $(COV_DIR)/coverage.info >/dev/null
+	@lcov --ignore-errors unused --capture --directory . --output-file $(COV_DIR)/coverage.info >/dev/null
 	@echo "== Filtering system paths =="
-	@lcov --remove $(COV_DIR)/coverage.info '/usr/*' --output-file $(COV_DIR)/coverage.info >/dev/null
+	@lcov --ignore-errors unused --remove $(COV_DIR)/coverage.info '/usr/*' --output-file $(COV_DIR)/coverage.info >/dev/null
 	@echo "== Generating HTML report =="
 	@genhtml $(COV_DIR)/coverage.info --output-directory $(COV_DIR) >/dev/null
 	@echo "Coverage report: $(COV_DIR)/index.html"
